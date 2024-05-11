@@ -98,3 +98,17 @@ Monitor Applications using Spring Boot Actuator
 
 
 We require model to pass anything from controller to JSP
+
+Understanding Logging
+
+logging.level.some.path=debug logging.level.some.other.path=error logging.file.name=logfile.log
+
+private Logger logger = LoggerFactory.getLogger(this.getClass()); logger.info("postConstruct");
+
+• Knowing what to log is an essential skill to be a great programmer
+
+• Spring Boot makes logging easy
+
+■ spring-boot-starter-logging
+
+• Default: Logback with SLF4j
